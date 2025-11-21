@@ -1,9 +1,3 @@
----
-number-sections: true
-crossref:
-  chapters: true
----
-
 # Learning Test Extension For Quarto
 
 This is a RevealJS extension that allows you to create learning tests with single or multiple choice questions in Quarto.  
@@ -14,7 +8,7 @@ It is 100% compatible to quizzes already created with the **quiz** extension.
 
 Here's an example of how a simple exercise looks like: 
 
-![Example of the Learning Test Extension](example.png){fig-align=center .lightbox alt="Example of the extended Quiz Extension"}
+![Example of the Learning Test Extension](example.png)
 
 ## Installing
 
@@ -114,7 +108,7 @@ and now the settings for the *learntest* extension:
 
 ### Buttons{#sec-buttons} 
 The following buttons may appear on the slides depending on available feautures.
-![All Buttons](all_buttons.png){fig-align=center .lightbox alt="All buttons, a slide may have"}
+![All Buttons](all_buttons.png)
 
 | Name| Meaning| Specials |
 |:-|:------|:------------|
@@ -276,7 +270,7 @@ Any amount of content may be inserted before the automatically generated summary
 On this summary page the following content is automatically generated:
 ```
 
-![Summary Slide of the Example](example-summary.png){fig-align=center .lightbox alt="Example of a summary slide"}
+![Summary Slide of the Example](example-summary.png)
 
 The summary page will only offer two buttons: one to go back to review the previous slide(s) and one to leave the deck.  
 The emoticons are selected based on the percentage of correct answers. 
