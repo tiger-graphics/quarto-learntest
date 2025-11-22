@@ -16,7 +16,7 @@ This will install the extension under the `_extensions` subdirectory.
 If you're using version control, you will want to check in this directory.
 
 ```bash
-quarto add tiger-graphics/learntest
+quarto add tiger-graphics/quarto-learntest
 ```
 
 ## Usage
