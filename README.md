@@ -1,7 +1,7 @@
 # Learning Test Extension For Quarto
 
 This is a RevealJS extension that allows you to create learning tests with single or multiple choice questions in Quarto.  
-It is based on the **quiz** extension by [Sam Parmar](https://github.com/parmsam){target="_blank"} but was extended to more 
+It is based on the **quiz** extension by [Sam Parmar](https://github.com/parmsam) but was extended to more 
 detailed scoring and educational possibilities.
 This extension allows to provide help and solutions for more challenging exercises and individual scoring for the different exercises.  
 It is 100% compatible to quizzes already created with the **quiz** extension. 
@@ -32,7 +32,7 @@ revealjs-plugins:
 ```
 
 Then use the following syntax within a slide to create a test question. There will be a button for each option and buttons to check 
-or reset each question, as well as to navigate (please see @sec-buttons).
+or reset each question, as well as to navigate.
 
 ``` markdown
 ## Test question goes here {.quiz-question}
@@ -53,7 +53,6 @@ Here's an example of what that might look like:
 title: "Single and Multiple Choice Test Examples"
 format:
   revealjs:
-    logo: ../../tatze_grey.png
     slide-number: false
     scrollable: true
     menu: false
@@ -70,7 +69,7 @@ format:
       includeScore: true
       defaultCorrect: "Correct :-)"
       defaultScore: "4"
-      exitTarget: "../index.html"
+      exitTarget: "index.html"
       quizLanguage: "en"
       quizDebug: false
     
@@ -94,7 +93,7 @@ and now the settings for the *learntest* extension:
 
 * `disableDeckShuffle: true` is recommended to suppress the option to randomly hop through the slides, including the summary
 * `allowNumberKeys: true` allows to select and deselect an answer by a number key.
-* `disableOnCheck: true` see @sec-features for more details
+* `disableOnCheck: true` see below for more details
 * `enableHelp: true` offers help for the exercise on the slide to the student. Must be written, of course. See below.
 * `enableSolution: true` offers the view of the solution of the exercise. Must also be written, of course. See below.
 * `disableReset: false` allows to reset multiple-choice selections; the button is not shown if set to `true`.
@@ -106,7 +105,7 @@ and now the settings for the *learntest* extension:
 * `quizLanguage: "en"` selects the localisation for the labelling (top line with the score, buttons, correct/incorrect response and summary). Currently, English (`en`) and German (`de`) are included.
 * `quizDebug: false` gives a lot of output in the java script console of the browser when set to `true`.
 
-### Buttons{#sec-buttons} 
+### Buttons 
 The following buttons may appear on the slides depending on available feautures.
 ![All Buttons](all_buttons.png)
 
@@ -121,7 +120,7 @@ The following buttons may appear on the slides depending on available feautures.
 | Exit | Leave the deck | jumps to the defined `exitTarget`|
 
 
-### Keyboard Shortcuts{#sec-shortkeys}
+### Keyboard Shortcuts
 
 Keyboard shortcut keys are identified by their function (e. g. `help` for the /Help/ key) followed by the term 'Key'.  
 If you want to assign another key to a shortcut you can change it by setting the according option in the YAML header like: `helpKey: '?'`
@@ -129,7 +128,7 @@ If you want to assign another key to a shortcut you can change it by setting the
 The following keyboard shortcuts are available with their YAML options for alternatives:
 
 | Function | Default value | YAML option |
-|:-|:-|:----------|
+|:-|:-|:-------|
 | Check | c | `checkKey: 'c'`|
 | Help | h | `helpKey: 'h'`|
 | Solution | s | `solutionKey: 's'`|
@@ -142,7 +141,7 @@ The following keyboard shortcuts are available with their YAML options for alter
 
 You can also set the `allowNumberKeys` option to `true` to allow users to select an answer by pressing the number key corresponding to the option. For example, if the correct answer is the second option, the user can press '2' to select the correct answer. By default they're set to true. 
 
-### Disabling features {#sec-features}
+### Disabling features
 
 The `disableOnCheck` option will disable the quiz question after it has been checked. This means that the user can't change their answer after they've checked it unless they reset the question. This is false by default. 
 
@@ -193,7 +192,7 @@ Within a slide, you can use the `data-explanation` attribute to provide an expla
 - [$\frac{4}{3}r^3$]{data-explanation="This is the formula for the volume of a sphere."}
 ```
 
-### Including current score in each slide {#sec-includescore}
+### Including current score in each slide
 
 The `includeScore` option will include a score information on top of each slide.  
 It will be formatted as follows
@@ -209,7 +208,7 @@ The check button will still be enabled, unless you use `disableOnCheck`. This is
 With the attribute `[]{data-score="n"}` the number of `n` points will be the individual maximum score for this slide.  
 It overrides the setting from `defaultScore: "4"` for the current slide.
 
-### Custom help for each slide {#sec-quizhelp}
+### Custom help for each slide
 Within a slide, you can use one of two possibilities to provide help to solve the exercise.
 
 **Hint:** When clicking the *Help* button the amount of achievable points for the current slide will be reduced to 50% of the maximum score.
@@ -233,7 +232,7 @@ This code leads to display an extra HTML page in the area below the buttons when
 In this example the help page will be generated from the file `test-example1-Help.md` which is rendered by QUARTO to `test-example1-Help.html`.
 This page will not be reachable from the deck but only by clicking *Help*.
 
-### Custom solution for each slide {#sec-quizsolution}
+### Custom solution for each slide
 Within a slide, you can use one of two possibilities to provide a solution for the exercise.
 
 **Hint:** When clicking the *Solution* button the amount of achievable points for the current slide will be set to 0.
@@ -285,6 +284,4 @@ The emoticons are selected based on the percentage of correct answers.
  
 ## Example
 
-Here is the source code for a minimal example: [example.md](example.md).
-
-The output of `example.qmd` is [here](aufgaben/quiz-examples/quiz-example.md).
+The output of `example.qmd` is [here](https://tigergraphics.quarto.pub/quarto-learntest).
