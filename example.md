@@ -46,8 +46,8 @@ Which of the shown numbers are prime numbers?
 - 9
 - 10
 
-[]{data-short-help="Prime numbers can only be divided by 1 and themsleves.<br>1 is no prime number by definition."}
-[]{data-short-solution="2, 3, 5, 7 and 11 are prime numbers."}
+[]{data-short-help="Prime numbers can only be divided by 1 and themsleves.<br>1 is no prime number by definition."}  
+[]{data-short-solution="2, 3, 5, 7 and 11 are prime numbers."}  
 []{data-score="3"}
 
 ## Exercise 2{.quiz-question}
@@ -60,8 +60,8 @@ What is the **percentage** $CO_2$ in the air indicated by a $CO_2$-content of 40
 - 0.4
 - 4
 
-[]{data-help="quiz-example1-Help"}
-[]{data-solution="quiz-example1-Solution"}
+[]{data-help="quiz-example1-Help"}  
+[]{data-solution="quiz-example1-Solution"}  
 []{data-score="4"}
 
 ##  Exercise 3{.quiz-question}
@@ -85,8 +85,8 @@ Which functional relationship describes the regression line?
 - $Y(x)= b \cdot x^{-a}$  with  $a>0$ and b=600
 - None of the answers are correct
 
-[]{data-help="Irrad-Help"}
-[]{data-solution="Irrad-Solution"}
+[]{data-help="Irrad-Help"}  
+[]{data-solution="Irrad-Solution"}  
 []{data-score="6"}
 
 ## Summary {.quiz-summary}
