@@ -18,6 +18,19 @@ If you're using version control, you will want to check in this directory.
 ```bash
 quarto add tiger-graphics/quarto-learntest
 ```
+## Cloning the Example
+
+This will clone the repository `quarto-learntest` to the current directory
+
+```bash
+gh repo clone tiger-graphics/learntest
+```
+
+In the directory `quarto-learntest` the following command renders the project and starts a browers with the main page.
+
+```bash
+quarto preview
+```
 
 ## Usage
 
@@ -192,7 +205,7 @@ Within a slide, you can use the `data-explanation` attribute to provide an expla
 - [$\frac{4}{3}r^3$]{data-explanation="This is the formula for the volume of a sphere."}
 ```
 
-### Including current score in each slide
+### Including the current score in each slide
 
 The `includeScore` option will include a score information on top of each slide.  
 It will be formatted as follows
@@ -286,4 +299,4 @@ The emoticons are selected based on the percentage of correct answers.
 
 Here is the source code for an example: [example.md](example.md) and referenced [help](quiz-example1-Help.md) and [solution](quiz-example1-Solution.md) files.
 
-The output of the example is [here](https://tigergraphics.quarto.pub/quarto-learntest).
+The rendered example is [here](https://tigergraphics.quarto.pub/quarto-learntest).
