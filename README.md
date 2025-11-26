@@ -26,7 +26,7 @@ This will clone the repository `quarto-learntest` to the current directory
 gh repo clone tiger-graphics/learntest
 ```
 
-In the directory `quarto-learntest` the following command renders the project and starts a browers with the main page.
+In the directory `quarto-learntest` the following command renders the project and starts a brower with the main page.
 
 ```bash
 quarto preview
