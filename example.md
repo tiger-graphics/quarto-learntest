@@ -1,5 +1,5 @@
 ---
-title: "Single and Multiple Choice Test Examples"
+title: "Single and Multiple Answers Test Example"
 format:
   revealjs:
     slide-number: false
