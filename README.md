@@ -299,4 +299,4 @@ The emoticons are selected based on the percentage of correct answers.
 
 Here is the source code for an example: [example.md](example.md) and referenced [help](quiz-example1-Help.md) and [solution](quiz-example1-Solution.md) files.
 
-The rendered example is [here](https://tigergraphics.quarto.pub/quarto-learntest).
+The rendered example is [here](https://tigergraphics.homelinux.org/quarto-learntest).
